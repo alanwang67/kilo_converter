@@ -13,9 +13,9 @@ const App = ( ) => {
 
   const converter = () => {
     let weights = [25,20,15,10,5,2.5,1.25]
-    let x = Number(weight) / 2.20462
+    let target = Number(weight) / 2.20462
     
-    if (weight === '') {
+    if (weight === '' || target <= 20) {
       return []
     }
 
@@ -23,7 +23,7 @@ const App = ( ) => {
     let track = 20
     let result = []
     while (ctr <= (weights.length - 1)) {
-      if (x > track) {
+      if (target > track) {
         track += weights[ctr] * 2
         result.push(weights[ctr])
       }
@@ -34,6 +34,12 @@ const App = ( ) => {
       }
     }
 
+    // checks to see if adding a 1.25 is closer to the actual weight 
+    if (Math.abs((track + 2.5) - target) < Math.abs((track - target))) {
+      track += 2.5 
+      result.push(1.25)
+    }
+    
     return result
   }
 

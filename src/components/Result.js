@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { red, blue, black, yellow, green, white, silver } from '../assets/images' 
 import Box from '@mui/material/Button'
 import { bgcolor } from '@mui/system'
-
+import LB from "./LB"
 
 const Result = ( {value} ) => {
   let result = ""
@@ -23,6 +23,7 @@ const Result = ( {value} ) => {
 
   return (
     <div className = 'weights'>
+      <LB value = {value} />
       {value.map((item, id) => 
       <img key = {id} src = {weight_color_pairs[item]} alt = {weight_color_pairs[item]} />)}
     </div>

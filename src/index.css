@@ -31,6 +31,7 @@ img {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.weights {
-    margin: 5%;
+.lb_weight {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
