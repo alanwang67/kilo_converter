@@ -1,0 +1,36 @@
+body {
+    background-color: #C5D3D3;
+}
+
+form {
+    display: flex;
+}
+
+input {
+    outline: none;
+    padding: 5% 5%;
+}
+
+button {
+    background-color: #D9D9D9;
+
+}
+
+img {
+    margin: 3%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.weights {
+    margin: 5%;
+}
